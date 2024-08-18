@@ -1,0 +1,17 @@
+.contact-container {
+    overflow: hidden;
+    padding-bottom: 30vh;
+}
+
+.contact-title {
+    background-color: rgb(208, 133, 255);
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 2px 4px 10px rgb(0, 0, 0);
+    color: aliceblue;
+}
+
+.contact-card {
+    width: 75%;
+    margin: 0 auto;
+}

@@ -1,0 +1,21 @@
+[data-bs-theme=light] .navigation-bar {
+    background-color: rgb(235, 235, 235);
+}
+
+/* Icon Buttons */
+.icon-buttons {
+    font-size: 25px;
+    transition: transform 0.8s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.icon-buttons:hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.icon-buttons:active {
+    transform: scale(0.8);
+    transform-origin: center;
+}

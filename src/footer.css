@@ -1,0 +1,18 @@
+.footer-sections {
+    padding: 30px 30px 90px 30px !important;
+ }
+ 
+ .footer-links {
+    text-decoration: none;
+    color: rgb(186, 186, 186);
+ }
+ 
+ .footer-links-parent {
+    transition: ease 1s;
+    font-size: 12px;
+ }
+ 
+ .footer-links-parent:hover {
+    margin-left: 5px;
+ }
+ 

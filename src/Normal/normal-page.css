@@ -1,0 +1,123 @@
+.normal-container {
+    overflow: hidden;
+    padding-bottom: 30vh;
+}
+
+.box1 {
+    margin-bottom: 20px;
+    animation: box ease-out 2s,fade ease 5s;
+    position: relative;
+}
+
+.sections {
+    /* background-color: rgb(208, 133, 255); */
+    box-shadow: 2px 6px 10px 0px rgba(0, 0, 0, 0.812);
+    border-radius: 5px;
+    /* padding: 15px 15px; */
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+
+.box2 {
+    position: relative;
+    margin-bottom: 20px;
+    animation: box ease-out 2.5s, fade ease 5s;
+}
+
+.box3 {
+    position: relative;
+    margin-bottom: 20px;
+    animation: box ease-out 3s, fade ease 5s;
+}
+
+.sections-text {
+    background-color: rgb(208, 133, 255);
+    text-shadow: 2px 4px 10px rgb(0, 0, 0);
+    color: aliceblue;
+    font-size: 30px;
+    width: calc(100% + 1px);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.title-hr {
+    margin: 0px auto 10px auto;
+    width: 200px;
+    border: 3px solid rgba(0, 0, 0);
+    border-radius: 5px;
+    opacity: 0.6;
+}
+
+.card-text {
+    text-align: left;
+    margin: 2% 5%;
+    font-size: 18px;
+}
+
+.profile-img {
+    border-radius: 10px;
+    box-shadow: 2px 6px 10px 0px rgba(0, 0, 0, 0.812);
+    width: 100%;
+    max-height: 60vh;
+    object-fit: cover;
+    object-position: 20% 10%;
+}
+
+@keyframes box {
+    from {
+        transform: translateY(30vh);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+/* Project Cards */
+
+.project-card {
+    transition: ease 1s;
+    margin: 40px;
+    border: none;
+    box-shadow: 2px 6px 10px 0px rgba(0, 0, 0, 0.812);
+}
+
+.project-card:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.project-card:active {
+    transform: scale(0.97);
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project-img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.project-title {
+    background-color: rgb(208, 133, 255);
+    text-shadow: 2px 4px 10px rgb(0, 0, 0);
+    color: aliceblue;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0px 0px -4px 0px;
+    z-index: 1;
+    border-bottom: solid 1px black;
+}
