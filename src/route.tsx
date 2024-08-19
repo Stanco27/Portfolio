@@ -10,12 +10,12 @@ const AppRoute = () => {
     <>
       <BrowserRouter basename='/Stanco.github.io/'>
         <Routes>
-          <Route path={"/"} element={<MainPage />} />
-          <Route path={"/Home"} element={<MainPage />} />
-          <Route path="/Mini" element={<MiniPage />} />
-          <Route path="/Terminal" element={<TerminalPage />} />
-          <Route path="/Normal" element={<NormalPage />} />
-          <Route path="/Contact" element={<ContactPage />} />
+          <Route path={""} element={<MainPage />} />
+          <Route path={"Home"} element={<MainPage />} />
+          <Route path="Mini" element={<MiniPage />} />
+          <Route path="Terminal" element={<TerminalPage />} />
+          <Route path="Normal" element={<NormalPage />} />
+          <Route path="Contact" element={<ContactPage />} />
         </Routes>
       </BrowserRouter>
     </>
