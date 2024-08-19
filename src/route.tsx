@@ -8,7 +8,7 @@ import ContactPage from "./Contact/contact-page";
 const AppRoute = () => {
   return (
     <>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename='/Stanco.github.io/'>
         <Routes>
           <Route path={"/"} element={<MainPage />} />
           <Route path={"/Home"} element={<MainPage />} />
