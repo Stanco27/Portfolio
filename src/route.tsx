@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import MiniPage from "./Mini-Game/mini-page";
 import TerminalPage from "./Terminal/terminal-page";
 import NormalPage from "./Normal/normal-page";
