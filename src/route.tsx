@@ -8,16 +8,14 @@ import ContactPage from "./Contact/contact-page";
 const AppRoute = () => {
   return (
     <>
-      <BrowserRouter basename="">
         <Routes>
-          <Route path={"/"} element={<MainPage />} />
-          <Route path={"/Home"} element={<MainPage />} />
+          <Route path="" element={<MainPage />} />
+          <Route path="/Home" element={<MainPage />} />
           <Route path="/Mini" element={<MiniPage />} />
           <Route path="/Terminal" element={<TerminalPage />} />
           <Route path="/Normal" element={<NormalPage />} />
           <Route path="/Contact" element={<ContactPage />} />
         </Routes>
-      </BrowserRouter>
     </>
   );
 };
