@@ -5,11 +5,11 @@ const ChoiceContainer = () => {
 
   const handleClick = (choice: string) => {
     if(choice === "Terminal") {
-      window.location.href = "/Terminal";
+      window.location.href = "/Stanco.github.io/Terminal";
     } else if (choice === "Mini") {
-      window.location.href = "/Mini";
+      window.location.href = "/Stanco.github.io/Mini";
     } else {
-      window.location.href = "/Normal"
+      window.location.href = "/Stanco.github.io/Normal"
     }
   }
 

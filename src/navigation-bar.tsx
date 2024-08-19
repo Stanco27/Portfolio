@@ -9,20 +9,20 @@ const NavigationBar = () => {
   return (
     <Navbar className="navigation-bar justify-content-between px-3">
       <Container>
-        <Navbar.Brand href="/Home">
+        <Navbar.Brand href="/Stanco.github.io/Home">
           React-Bootstrap
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className="nav-links" href="/Home">
+            <Nav.Link className="nav-links" href="/Stanco.github.io/Home">
               Home
             </Nav.Link>
             <NavDropdown className="nav-links" title="Projects">
               <Dropdown.Item onClick={() => console.log("Market App")}>Market App</Dropdown.Item>
               <Dropdown.Item onClick={() => console.log("RigAssembly")}>RigAssembly</Dropdown.Item>
             </NavDropdown>
-            <Nav.Link className="nav-links" href="/Contact">
+            <Nav.Link className="nav-links" href="/Stanco.github.io/Contact">
               Contact
             </Nav.Link>
           </Nav>
