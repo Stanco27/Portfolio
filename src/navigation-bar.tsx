@@ -5,6 +5,17 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const NavigationBar = () => {
 
+  const handleClick = (choice: string) => {
+    window.history.replaceState({}, '', '/Stanco.github.io/');
+    
+    if(choice === "Contact") {
+      window.location.href = "#/Contact";
+    } else {
+      window.location.href = "#/Home";
+    }
+  }
+
+
 
   return (
     <Navbar className="navigation-bar justify-content-between px-3">
@@ -15,14 +26,14 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className="nav-links" href="/Stanco.github.io/Home">
+            <Nav.Link className="nav-links" onClick={() => handleClick("Home")}>
               Home
             </Nav.Link>
             <NavDropdown className="nav-links" title="Projects">
               <Dropdown.Item onClick={() => console.log("Market App")}>Market App</Dropdown.Item>
               <Dropdown.Item onClick={() => console.log("RigAssembly")}>RigAssembly</Dropdown.Item>
             </NavDropdown>
-            <Nav.Link className="nav-links" href="/Stanco.github.io/Contact">
+            <Nav.Link className="nav-links" onClick={() => handleClick("Contact")}>
               Contact
             </Nav.Link>
           </Nav>

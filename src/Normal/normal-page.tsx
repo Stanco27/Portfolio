@@ -30,7 +30,7 @@ const NormalPage = () => {
             <Card.Title className="py-3 sections-text">Projects</Card.Title>
             <Row>
             {projects.map((project, index) => (
-              <Col xs={12} md={4} lg={3} key={index}>
+              <Col xs={12} md={6} lg={3} key={index}>
               <ProjectCards key={index} project={project}/>
             </Col>
               ))}
