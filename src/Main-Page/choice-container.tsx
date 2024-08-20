@@ -4,8 +4,8 @@ import './choice-container.css'
 const ChoiceContainer = () => {
 
   const handleClick = (choice: string) => {
-    window.history.replaceState({}, '', '/Stanco.github.io/');
-    
+    window.history.replaceState({}, '', '/Portfolio/');
+
     if(choice === "Terminal") {
       window.location.href = "#/Terminal";
     } else if (choice === "Mini") {

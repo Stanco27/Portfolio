@@ -6,7 +6,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 const NavigationBar = () => {
 
   const handleClick = (choice: string) => {
-    window.history.replaceState({}, '', '/Stanco.github.io/');
+    window.history.replaceState({}, '', '/Portfolio/');
     
     if(choice === "Contact") {
       window.location.href = "#/Contact";
@@ -20,7 +20,7 @@ const NavigationBar = () => {
   return (
     <Navbar className="navigation-bar justify-content-between px-3">
       <Container>
-        <Navbar.Brand href="/Stanco.github.io/#/Home">
+        <Navbar.Brand href="/Portfolio/#/Home">
           React-Bootstrap
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
