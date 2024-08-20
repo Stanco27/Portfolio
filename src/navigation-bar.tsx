@@ -20,7 +20,7 @@ const NavigationBar = () => {
   return (
     <Navbar className="navigation-bar justify-content-between px-3">
       <Container>
-        <Navbar.Brand href="/Stanco.github.io/Home">
+        <Navbar.Brand href="/Stanco.github.io/#/Home">
           React-Bootstrap
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
