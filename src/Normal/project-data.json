@@ -1,10 +1,10 @@
 [{
     "name": "Market App",
-    "image": "/../images/Market.jpg",
+    "image": "../assets/Reciept.jpg",
     "link": "nothing.com"
 },
 {
     "name": "RigAssembly",
-    "image": "/../images/Receipt.jpg",
+    "image": "../assets/Market.jpg",
     "link": "nothing.com"
 }]
