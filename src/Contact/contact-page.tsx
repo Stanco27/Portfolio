@@ -9,8 +9,8 @@ const ContactPage = () => {
           Contact Information
         </Card.Title>
         <div className="d-flex justify-content-between">
-        <Card.Text className="mb-4">Email:</Card.Text>
-        <Card.Text className="mb-4">stancodiaz@gmail.com</Card.Text>
+        <Card.Text className="mb-4 contact-text">Email:</Card.Text>
+        <Card.Text className="mb-4 contact-text">stancodiaz@gmail.com</Card.Text>
         </div>
       </Card>
     </div>

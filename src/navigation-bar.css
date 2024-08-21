@@ -20,3 +20,44 @@
     transition: ease 1s;
     margin: 0px 6px;
 }
+
+@media only screen and (max-width: 800px) {
+    .nav-links{
+        font-size: 10px;
+    }
+    
+    .nav-brand {
+        font-size: 18px;
+    }
+    
+    .icon-buttons {
+        font-size: 22px;
+    }
+    
+    @media only screen and (max-width: 799px) {
+        .nav-links{
+            font-size: 10px;
+        }
+        
+        .nav-brand {
+            font-size: 14px;
+        }
+        
+        .icon-buttons {
+            font-size: 18px;
+        }
+    }
+    @media only screen and (max-width: 798px) {
+        .nav-links{
+            font-size: 9px;
+        }
+        
+        .nav-brand {
+            font-size: 12px;
+        }
+        
+        .icon-buttons {
+            font-size: 17px;
+        } 
+    }
+}

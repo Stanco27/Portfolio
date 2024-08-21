@@ -20,8 +20,8 @@ const NavigationBar = () => {
   return (
     <Navbar className="navigation-bar justify-content-between px-3">
       <Container>
-        <Navbar.Brand href="/Portfolio/#/Home">
-          React-Bootstrap
+        <Navbar.Brand href="/Portfolio/#/Home" className="nav-brand">
+          Portfolio
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -39,8 +39,8 @@ const NavigationBar = () => {
           </Nav>
         </Navbar.Collapse>
       </Container>
-      <BsGithub className="me-4 icon-buttons" onClick={() =>(window.location.href = "http://www.github.com/Stanco27")}/>
-      <BsLinkedin className="me-4 icon-buttons" onClick={() => window.location.href = "http://www.linkedin.com/in/stanco-diaz-b418a117b"}/>
+      <BsGithub className="me-3 icon-buttons" onClick={() =>(window.location.href = "http://www.github.com/Stanco27")}/>
+      <BsLinkedin className="me-3 icon-buttons" onClick={() => window.location.href = "http://www.linkedin.com/in/stanco-diaz-b418a117b"}/>
       <ThemeButton />
     </Navbar>
   );
