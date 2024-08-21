@@ -12,8 +12,6 @@
 .sections {
     box-shadow: 2px 6px 10px 0px rgba(0, 0, 0, 0.812);
     border-radius: 5px;
-    display: flex;
-    position: relative;
     height: 100%;
 }
 
@@ -39,6 +37,18 @@
     text-align: center;
     border-radius: 5px;
 }
+.project-info-title {
+    background-color: rgb(208, 133, 255);
+    text-shadow: 2px 4px 10px rgb(0, 0, 0);
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card-subtitles {
+    margin: 2% 5%;
+}
 
 .title-hr {
     margin: 0px auto 10px auto;
@@ -60,7 +70,7 @@
     width: 100%;
     object-fit: cover;
     object-position: 20% 10%;
-    height: 100%;
+    max-height: 50vh;
 }
 
 @keyframes box {

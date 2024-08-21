@@ -10,7 +10,7 @@ const NormalPage = () => {
   return (
     <div className="px-4 pt-4 normal-container">
       <Row>
-        <Col xs={12} md={8} className="box1">
+        <Col xs={12} md={7} className="box1">
           <Card className="sections">
             <Card.Title className="py-3 sections-text">About</Card.Title>
             <p className="pb-3 card-text">
@@ -25,16 +25,44 @@ const NormalPage = () => {
             </p>
           </Card>
         </Col>
-        <Col className="box2" xs={12} md={4}>
+        <Col className="box2" xs={12} md={5}>
           {/* Add image of myself here */}
           <img className="profile-img" src={profileImg} />
         </Col>
+        <Col className="box3" xs={12}>
+          <Card className="sections mb-3">
+            <Card.Title className="py-3 project-info-title">
+              Projects Info
+            </Card.Title>
+            <h4 className="card-subtitles">Market App</h4>
+            <p className="pb-3 card-text">
+              I collaborated with a friend to create a full-stack ecommerce
+              website, encompassing the backend, database, and frontend. Through
+              this project, I gained valuable insights into how databases
+              function, how the backend interacts with the database using
+              queries, and how the backend communicates with the frontend when
+              requests are made. The website also includes an admin side with
+              security measures in place to prevent unauthorized users from
+              accessing it.
+            </p>
+            <h4 className="card-subtitles">RigAssembly</h4>
+            <p className="pb-4 card-text">
+              This is an ecommerce website that I developed entirely on my own.
+              While it only includes the front end, it functions like any
+              standard ecommerce site. It features a product page that showcases
+              the items, a compatibility check for selected products, and sleek,
+              modern designs.
+            </p>
+          </Card>
+        </Col>
         <Col xs={12} className="box3">
           <Card className="sections">
-            <Card.Title className="py-3 sections-text">Projects</Card.Title>
+            <Card.Title className="py-3 sections-text">
+              Access Projects
+            </Card.Title>
             <Row>
               {projects.map((project, index) => (
-                <Col xs={12} md={6} lg={3} key={index}>
+                <Col xs={12} md={6} lg={4} key={index}>
                   <ProjectCards
                     key={index}
                     project={project}
