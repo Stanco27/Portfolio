@@ -10,7 +10,7 @@ const NormalPage = () => {
   return (
     <div className="px-4 pt-4 normal-container">
       <Row>
-        <Col xs={12} md={7} className="box1">
+        <Col xs={12} sm={6} md={7} lg={9} className="box1">
           <Card className="sections">
             <Card.Title className="py-3 sections-text">About</Card.Title>
             <p className="pb-3 card-text">
@@ -25,7 +25,7 @@ const NormalPage = () => {
             </p>
           </Card>
         </Col>
-        <Col className="box2" xs={12} md={5}>
+        <Col className="box2" xs={12} sm={6} md={5} lg={3}>
           {/* Add image of myself here */}
           <img className="profile-img" src={profileImg} />
         </Col>
