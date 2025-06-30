@@ -1,10 +1,10 @@
 [{
     "name": "Market App",
     "image": "../assets/Reciept.jpg",
-    "link": "nothing.com"
+    "link": "https://github.com/TomasHerreraS/market-app"
 },
 {
     "name": "RigAssembly",
     "image": "../assets/Market.jpg",
-    "link": "nothing.com"
+    "link": "https://stanco27.github.io/RigAssembly/"
 }]

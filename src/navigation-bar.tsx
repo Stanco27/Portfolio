@@ -30,12 +30,9 @@ const NavigationBar = () => {
               Home
             </Nav.Link>
             <NavDropdown className="nav-links" title="Projects">
-              <Dropdown.Item onClick={() => console.log("Market App")}>Market App</Dropdown.Item>
-              <Dropdown.Item onClick={() => console.log("RigAssembly")}>RigAssembly</Dropdown.Item>
+              <Dropdown.Item onClick={() => window.location.href = "https://github.com/TomasHerreraS/market-app"}>Market App</Dropdown.Item>
+              <Dropdown.Item onClick={() => window.location.href = "https://stanco27.github.io/RigAssembly/"}>RigAssembly</Dropdown.Item>
             </NavDropdown>
-            <Nav.Link className="nav-links" onClick={() => handleClick("Contact")}>
-              Contact
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
