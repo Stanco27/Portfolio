@@ -1,5 +1,11 @@
-[{
-    "name": "Market App",
+[
+{
+    "name": "My Meeting Notaker",
+    "image": "../assets/Market.jpg",
+    "link": ""
+},
+{
+    "name": "Quantum Halo",
     "image": "../assets/Reciept.jpg",
     "link": "https://github.com/TomasHerreraS/market-app"
 },
@@ -7,4 +13,6 @@
     "name": "RigAssembly",
     "image": "../assets/Market.jpg",
     "link": "https://stanco27.github.io/RigAssembly/"
-}]
+}
+
+]
