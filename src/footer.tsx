@@ -13,7 +13,7 @@ const Footer = () => {
         </Col>
         <Col className='footer-sections'>
         <h3>Contact</h3>
-        <h6 className='footer-text'>stancodiaz@gmail.com</h6>
+        <h6 className='footer-text' onClick={() => window.open("mailto:stancodiaz@gmail.com?subject=Inquiry from your portfolio&body=Hello, I am contacting you regarding your portfolio.")}>stancodiaz@gmail.com</h6>
         <h6 className='footer-text' onClick={() => window.open("https://github.com/Stanco27")}>Github</h6>
         <h6 className='footer-text' onClick={() => window.open("https://www.linkedin.com/in/stanco-diaz-b418a117b/")}>LinkedIn</h6>
         </Col>
