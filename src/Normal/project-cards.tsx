@@ -1,25 +1,33 @@
 import { Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import '../Normal/normal-page.css'
+import "./project-cards.css";
 
-interface Projects {
-  name: string;
-  link: string;
-}
+const ProjectCards = ({ project }: any) => {
+  
+  const description = project.description || ""; 
 
-interface ProjectProps {
-  image: string;
-  project: Projects;
-}
-
-const ProjectCards: React.FC<ProjectProps> = ({ project, image }) => {
   return (
-    <Link to={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-      <Card className="project-card">
-        <Card.Title className="py-2 project-title">{project.name}</Card.Title>
-        <Card.Img className="project-img" src={image} />
-      </Card>
-    </Link>
+    <Card className="project-card-custom border-0 shadow-lg">
+      <div className="card-inner-wrapper">
+        <Card.Img 
+          variant="top" 
+          src={project.image} 
+          className="project-image-main" 
+          alt={project.title || "Project"} 
+        />
+        
+        <div className="card-content-overlay">
+          <div className="overlay-text-container">
+            <h4 className="project-title-text">{project.title || "Untitled"}</h4>
+            <p className="project-desc-text">
+              {description.length > 150 
+                ? `${description.substring(0, 150)}...` 
+                : description}
+            </p>
+            <button className="project-btn-outline">View Project</button>
+          </div>
+        </div>
+      </div>
+    </Card>
   );
 };
 

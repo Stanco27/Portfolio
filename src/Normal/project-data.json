@@ -1,18 +1,27 @@
 [
-{
-    "name": "My Meeting Notaker",
-    "image": "../assets/Market.jpg",
+  {
+    "name": "My Meeting Notetaker",
+    "image": "https://i.imgur.com/nmlMfwx.png",
     "link": "https://my-meeting-notetaker.vercel.app"
-},
-{
+  },
+  {
     "name": "Quantum Halo",
-    "image": "../assets/Reciept.jpg",
+    "image": "https://tint.creativemarket.com/GXh_-w21vFvJ8mO5RQhpXlSWFe9uWQoKbw0BTCZEr10/width:1200/height:800/gravity:nowe/rt:fill-down/el:1/czM6Ly9maWxlcy5jcmVhdGl2ZW1hcmtldC5jb20vaW1hZ2VzL3NjcmVlbnNob3RzL3Byb2R1Y3RzLzMxODQvMzE4NDMvMzE4NDM3MjkvMDlfcHJldmlldy1vLmpwZw?1688441443",
     "link": "https://github.com/TomasHerreraS/market-app"
-},
-{
+  },
+  {
+    "name": "Pokemon Tracker (discord bot)",
+    "image": "https://i.imgur.com/cH1Sd2P.png",
+    "link": "https://github.com/Stanco27/pokemon-card-tracker"
+  },
+  {
+    "name":"CloudEX",
+    "image": "https://i.imgur.com/hTqfI0r.png",
+    "link": "https://github.com/zann3x/IFT401-CloudEx"
+  },
+  {
     "name": "RigAssembly",
-    "image": "../assets/Market.jpg",
+    "image": "https://imgur.com/4HXTqWV.png",
     "link": "https://stanco27.github.io/RigAssembly/"
-}
-
+  }
 ]

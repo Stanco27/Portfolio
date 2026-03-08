@@ -32,6 +32,7 @@ const NavigationBar = () => {
             <NavDropdown className="nav-links" title="Projects">
               <Dropdown.Item onClick={() => window.location.href = "https://github.com/TomasHerreraS/market-app"}>Market App</Dropdown.Item>
               <Dropdown.Item onClick={() => window.location.href = "https://stanco27.github.io/RigAssembly/"}>RigAssembly</Dropdown.Item>
+              <Dropdown.Item onClick={() => window.location.href = "https://my-meeting-notetaker.vercel.app/"}>Meeting Notetaker</Dropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

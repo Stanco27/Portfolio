@@ -1,27 +1,43 @@
 import { Col, Row } from 'react-bootstrap';
 import '../src/footer.css';
+import projects from "./Normal/project-data.json";
 
 const Footer = () => {
   return (
-    <>
-    <Row className='footer g-0'>
-        <Col className='footer-sections'>
-        <h3>Projects</h3>
-        <h6 className="footer-text" onClick={() => window.open("https://my-meeting-notetaker.vercel.app")}>My Meeting Notaker</h6>
-        <h6 className="footer-text" onClick={() => window.open("https://github.com/TomasHerreraS/market-app")}>Market App</h6>
-        <h6 className="footer-text" onClick={() => window.open("https://stanco27.github.io/RigAssembly/")}>RigAssembly</h6>
+    <div className="footer-wrapper">
+      <Row className='footer g-0'>
+        <Col className='footer-sections' xs={12} md={6}>
+          <h3>Projects</h3>
+          {projects.map((project: any, index: number) => (
+            <h6 
+              key={index} 
+              className="footer-text" 
+              onClick={() => window.open(project.link)}
+            >
+              {project.name}
+            </h6>
+          ))}
         </Col>
-        <Col className='footer-sections'>
-        <h3>Contact</h3>
-        <h6 className='footer-text' onClick={() => window.open("mailto:stancodiaz@gmail.com?subject=Inquiry from your portfolio&body=Hello, I am contacting you regarding your portfolio.")}>stancodiaz@gmail.com</h6>
-        <h6 className='footer-text' onClick={() => window.open("https://github.com/Stanco27")}>Github</h6>
-        <h6 className='footer-text' onClick={() => window.open("https://www.linkedin.com/in/stanco-diaz-b418a117b/")}>LinkedIn</h6>
+
+        <Col className='footer-sections' xs={12} md={6}>
+          <h3>Contact</h3>
+          <h6 
+            className='footer-text' 
+            onClick={() => window.open("mailto:stancodiaz@gmail.com?subject=Inquiry from your portfolio&body=Hello, I am contacting you regarding your portfolio.")}
+          >
+            stancodiaz@gmail.com
+          </h6>
+          <h6 className='footer-text' onClick={() => window.open("https://github.com/Stanco27")}>
+            Github
+          </h6>
+          <h6 className='footer-text' onClick={() => window.open("https://www.linkedin.com/in/stanco-diaz-b418a117b/")}>
+            LinkedIn
+          </h6>
         </Col>
-    </Row>
-    <p className='copyright'>&copy; 2024 Stanco Diaz. All Rights Reserved.</p>
-    </>
-    
-  )
+      </Row>
+      <p className='copyright'>&copy; {new Date().getFullYear()} Stanco Diaz. All Rights Reserved.</p>
+    </div>
+  );
 }
 
 export default Footer;
